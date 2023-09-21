@@ -31,7 +31,9 @@ API Testing Tool Used : Postman
         "difficulty_level": " ",
         "category": " "
     }]
+    
  4) POST: http://localhost:8080/question/generate?categoryName=Java&numQuestions=5
+
  5) POST: http://localhost:8080/question/getQuestions
     RequestBody:
      Id's: [1,2,3]
@@ -43,6 +45,7 @@ API Testing Tool Used : Postman
     }
    
    
+
 # Quiz-Service
 1) Post: http://localhost:8090/quiz/create
    RequestBody(JSON):
@@ -51,7 +54,9 @@ API Testing Tool Used : Postman
            "numQuestions":" ",
            "title":" "
    }               
+
 2) GET: http://localhost:8090/quiz/get/{id}
+
 3) POST: http://localhost:8090/quiz/submit/{id}
    RequestBody:
    {
@@ -59,5 +64,6 @@ API Testing Tool Used : Postman
         "response":" "
    }
 
+ 
  # API-Gateway
  1) GET: http://localhost:8765/quiz-service/quiz/get/{id}
